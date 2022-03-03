@@ -31,5 +31,7 @@ stop.addEventListener('click',()=>{
 })
 reset.addEventListener('click',()=>{
   timeElapsedAlready=0;
+  currentTime=0;
+  clearInterval(stopTheInterval);
   stopwatch.innerText="00:00:000";
 })
